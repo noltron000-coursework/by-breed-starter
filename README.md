@@ -29,19 +29,19 @@ Note! Not all cats or dogs have the same feature properties. Many are shared but
 The goal of these challenges is to use FlatList to display cat and dog breed information in a scrolling list. 
 
 1. Use FlatList to display cat or dog breeds. 
-  - The goal here is to do the minimum to display a list. 
-  - You'll need to set up FlatList set data and renderItem. 
-  - RenderItem can return a minimal component at this stage.
-  - Display only the breed name. 
+	- The goal here is to do the minimum to display a list. 
+	- You'll need to set up FlatList set data and renderItem. 
+	- RenderItem can return a minimal component at this stage.
+	- Display only the breed name. 
 2. Use keyExtractor to set the key on each list item.
-  - Set keyExtractor as prop. 
-  - define a function to return a unique key name. The breed name by itself should work. I used the name and the index with a hyphen. 
+	- Set keyExtractor as prop. 
+	- define a function to return a unique key name. The breed name by itself should work. I used the name and the index with a hyphen. 
 3. Make a custom component for the list item. Lets call this the List cell. 
-  - Define the component. Keep the code simple at this stage.
-  - The component should take a data object (cat or dog) as a prop. 
-  - The component should just display the breed name for now. 
-  - Export the component, and import it where your component uses FlatList. 
-  - renderItem should return this component. Be sure to set item as data prop. 
+	- Define the component. Keep the code simple at this stage.
+	- The component should take a data object (cat or dog) as a prop. 
+	- The component should just display the breed name for now. 
+	- Export the component, and import it where your component uses FlatList. 
+	- renderItem should return this component. Be sure to set item as data prop. 
 4. Customize the List Cell component you made in the previous step. 
-  - Grab some of the properties off the data object. Not every breed has all properties! Think of some way to display all proprties that exist on each object.
+	- Grab some of the properties off the data object. Not every breed has all properties! Think of some way to display all proprties that exist on each object.
 5. Display cats and dogs. You'll need a UI element to choose the pet type. On iOS you can use SegmentedControlIOS. On Android you can use one or buttons, there are also a couple [third party segmented controls](https://stackoverflow.com/questions/35313387/segmentedcontrolios-for-android-in-react-native)

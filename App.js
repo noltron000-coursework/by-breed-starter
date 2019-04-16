@@ -6,24 +6,24 @@ import { petTypes, cats, dogs } from './breeds'
 console.log(petTypes)
 
 export default class App extends React.Component {
-  constructor(props) {
-    super(props)
+	constructor(props) {
+		super(props)
 
-  }
+	}
 
-  
+	
 
-  render() {
-    return (
-      <View style={styles.container}>
-       <Text>By Breed starter</Text>
-      </View>
-    );
-  }
+	render() {
+		return (
+			<View style={styles.container}>
+			<Text>By Breed starter</Text>
+			</View>
+		);
+	}
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1
-  }
+	container: {
+		flex: 1
+	}
 });
