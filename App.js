@@ -15,7 +15,8 @@ export default class App extends React.Component {
 			<BreedCell
 				data={item}
 				style={styles.cell}
-				breed={item.breed} />
+				// breed={item.breed}
+			/>
 		)
 	}
 

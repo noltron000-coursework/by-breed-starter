@@ -3,10 +3,13 @@ import { View, Text, StyleSheet, Dimensions } from 'react-native'
 
 const BreedCell = ({breed, data}) => {
 	// gives an array of all keys on the Object
+
 	const keys = Object
 	.keys(data) // get keys from data
 	.filter(key => key != 'breed') // remove breed key
+
 	const desc = keys.map(key => `${key}: ${data[key]}`)
+
 	return (
 		<View style={styles.container}>
 			<Text style={styles.breed}>{breed}</Text>
